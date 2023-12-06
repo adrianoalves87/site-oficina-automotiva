@@ -336,25 +336,29 @@
             </div><!--column left-->
             <div class="column rigth">
                 <div class="text">Mensagem</div>
-                <form action="#">
+                <form action="https://api.staticforms.xyz/submit" method="post">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Nome" required>
+                            <input type="text" class="field name"name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                            <label for="nome"> <i class="icon icon-user-outline"></i> </label>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <input type="text" class="field email" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
+                            <label for="email"> <i class="icon icon-mail-3"></i> </label>
                         </div>
                     </div>
-                    <div class="field">
-                        <div class="field">
-                            <input type="text" placeholder="Sobrenome" required>
-                        </div>
+                  
                         <div class="field textarea">
                            <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Enviar</button>
+                            <button type="submit" class="btn-3d">
+                                <i class="icon icon-forward-1"> Enviar</i>
+                               
+                            </button>
                         </div>
+                        <input type="hidden" name="accessKey" value="3c5f570e-2c43-4d69-bc08-4bddaa5ba87a">
+                        <input type="hidden" name="redirectTo" value="https://adrianoalves87.github.io/confirma-o-de-envio-de-mensagem/">
                     </div>
                 </form>
             </div>
@@ -431,19 +435,6 @@ $(document).ready(function(){
 
 </script>
 
-
-
-
-
-
-
-
-
-
-
 </body>
-
-
-
 
 </html>
