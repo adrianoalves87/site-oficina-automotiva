@@ -635,7 +635,28 @@ footer span a:hover{
     }
 }
 
+/* sessão serviços */
+.services .title::after,
+.teams .title::after {
+    background: #111;
+    content: "Que oferecemos";
+    letter-spacing: 0.05em; /* Adicione aqui */
+}
 
+/* sessão especialidades */
+.skills .title::after {
+    content: "Que faço";
+    letter-spacing: 0.05em; /* Adicione aqui */
+}
 
+/* sessão equipe */
+.teams .title::after {
+    content: "Especializada";
+    letter-spacing: 0.05em; /* Adicione aqui */
+}
 
-
+/* sessão contato */
+.contact .title::after {
+    content: "Fale conosco";
+    letter-spacing: 0.05em; /* Adicione aqui */
+}
