@@ -77,7 +77,7 @@ html{
     font-size: 27px;
 }
 .home .home-content .text-2{
-    font-size: 70px;
+    font-size: 75px;
     font-weight: 500;
     margin-left: -3px;
 }
@@ -327,38 +327,20 @@ section .title::after{
     left: 0;
     background: #00804b;
 }
-.skills .skills-content .right .motor::before{
-    width: 100%;
+.skills .skills-content .right .html::before{
+    width: 93%;
 }
-.skills .skills-content .right .Alinhamento::before{
-    width: 100%;
+.skills .skills-content .right .css::before{
+    width: 85%;
 }
-.skills .skills-content .right .Balanceamento::before{
-    width: 100%;
+.skills .skills-content .right .js::before{
+    width: 87%;
 }
-.skills .skills-content .right .Troca::before{
-    width: 100%;
+.skills .skills-content .right .php::before{
+    width: 47%;
 }
-
-.skills .skills-content .right .Elétrica::before{
-    width: 100%;
-}
-
-
-.skills .skills-content .right .Injeção::before{
-    width: 100%;
-}
-
-.skills .skills-content .right .Suspensão::before{
-    width: 100%;
-}
-
-.skills .skills-content .right .Embreagem::before{
-    width: 100%;
-}
-
-.skills .skills-content .right .Freios::before{
-    width: 100%;
+.skills .skills-content .right .mysql::before{
+    width: 42%;
 }
 /*  sessão equipe  */
 .teams .title::after{
@@ -633,30 +615,4 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-}
-
-/* sessão serviços */
-.services .title::after,
-.teams .title::after {
-    background: #111;
-    content: "Que oferecemos";
-    letter-spacing: 0.05em; /* Adicione aqui */
-}
-
-/* sessão especialidades */
-.skills .title::after {
-    content: "Que faço";
-    letter-spacing: 0.05em; /* Adicione aqui */
-}
-
-/* sessão equipe */
-.teams .title::after {
-    content: "Especializada";
-    letter-spacing: 0.05em; /* Adicione aqui */
-}
-
-/* sessão contato */
-.contact .title::after {
-    content: "Fale conosco";
-    letter-spacing: 0.05em; /* Adicione aqui */
 }
