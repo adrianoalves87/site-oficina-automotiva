@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    <script type="text/javascript" src=""></script>
     <div class="scroll-up-btn">
         <ion-icon name="chevron-up-outline"></ion-icon>
     </div>
@@ -16,7 +17,7 @@
         <div class="max-width">
             <div class="logo"><a href="#">adriano<span>alves</span></a></div>
             <ul class="menu">
-                <li><a href="#home">Inicio</a></li>
+                <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#skills">Especialidade</a></li>
@@ -350,16 +351,14 @@
                             </button>
                         </div>
                         <input type="hidden" name="accessKey" value="3c5f570e-2c43-4d69-bc08-4bddaa5ba87a">
-                        <input type="hidden" name="redirectTo" value="https://adrianoalves87.github.io/confirma-o-de-envio/">
+                        <input type="hidden" name="redirectTo" value="">
                     </div>
                 </form>
             </div>
             </div>
         </div>
     </section>
-
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
@@ -368,6 +367,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <script>
+
+$(document).ready(function(){
+    // Adiciona o evento de clique aos itens do menu
+    $('.menu a').click(function(e) {
+        // Previne o comportamento padrão do link
+        e.preventDefault();
+        
+        // Obtém o href do link clicado
+        var target = $(this).attr('href');
+
+        // Calcula a posição da seção de destino
+        var offset = $(target).offset().top;
+
+        // Realiza a animação de rolagem suave
+        $('html, body').animate({
+            scrollTop: offset
+        }, 1000);
+
+        // Fecha o menu
+        $('.navbar .menu').removeClass("active");
+        $('.menu-btn i').removeClass("active");
+    });
+});
 
 $(document).ready(function(){
     $(window).scroll(function(){
